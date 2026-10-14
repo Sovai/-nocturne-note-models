@@ -14,10 +14,117 @@
       "id": "omnivoice-onnx-int4",
       "name": "OmniVoice ONNX INT4",
       "family": "omnivoice",
-      "status": "experimental-unpublished",
-      "releases": [],
+      "status": "available",
+      "releases": [
+        {
+          "version": "v1",
+          "files": {
+            "int4/audio_embeddings_encoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__audio_embeddings_encoder.onnx",
+              "sha256": "f21daf4ee076c841d210b8941063a057c6e36d2bc04f4405daefa15b82c05563",
+              "size": 2363
+            },
+            "int4/audio_embeddings_encoder.onnx.data": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__audio_embeddings_encoder.onnx.data",
+              "sha256": "f6ed8d313fa5f6d2d33f3ad0af077dd1ba6d607f2a573cb389f28eec53f84393",
+              "size": 87160832
+            },
+            "int4/audio_heads_decoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__audio_heads_decoder.onnx",
+              "sha256": "389f2133371f7f0bd678aba8cf1eac102ee4b227d3372f49bd181c591b890360",
+              "size": 4462676
+            },
+            "int4/chat_template.jinja": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__chat_template.jinja",
+              "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+              "size": 4168
+            },
+            "int4/config.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__config.json",
+              "sha256": "a8957a1c6e980b1f13347af7f33b339be6566f35dec66365dedaedabf51f61e9",
+              "size": 1416
+            },
+            "int4/genai_config.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__genai_config.json",
+              "sha256": "c525b8d30f7d75560cc7328c84553e986fa0dc35a362957ee1128a55891dc7f8",
+              "size": 1501
+            },
+            "int4/llm_decoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__llm_decoder.onnx",
+              "sha256": "dba2abc6753795f47e9c2f79e274ba1149de8a056f4cda35c7fb30fa0e50fedc",
+              "size": 298798
+            },
+            "int4/llm_decoder.onnx.data": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__llm_decoder.onnx.data",
+              "sha256": "59aa22f43d7b501d9ce64183106e60b65f97fb67e92f5d9e088d07504cf63383",
+              "size": 296484864
+            },
+            "int4/model_config.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__model_config.json",
+              "sha256": "cc4d867113078c19d500469bf5dd8bfd5344dfdae5acb2da6be8110c40b2fc8d",
+              "size": 341
+            },
+            "int4/omnivoice_manifest.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__omnivoice_manifest.json",
+              "sha256": "62b5fe2a987e29873963e333a5dd5845289107dc8a4cd19340861de87cc0c215",
+              "size": 3517
+            },
+            "int4/tokenizer.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__tokenizer.json",
+              "sha256": "408f669b7e2b045fdf54201d815bd364e6667dbd845115da81239c40bc6dcfd1",
+              "size": 11423986
+            },
+            "int4/tokenizer_config.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/int4__tokenizer_config.json",
+              "sha256": "49f78845596a82bf15c83673794bdf9f76f812b11f60ab6a2239d9be65b00676",
+              "size": 533
+            },
+            "audio_tokenizer/fp16/acoustic_encoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__acoustic_encoder.onnx",
+              "sha256": "498f0fc6980a3f1fd175bf13bbf88e470d67c700c11268674d99780f9abdffda",
+              "size": 295846
+            },
+            "audio_tokenizer/fp16/acoustic_encoder.onnx.data": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__acoustic_encoder.onnx.data",
+              "sha256": "eab4ff631dbd1346c23656c5b0b1dcc40f4608edd7f7f508e0a044950e233116",
+              "size": 102615040
+            },
+            "audio_tokenizer/fp16/higgs_decoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__higgs_decoder.onnx",
+              "sha256": "19b368e460fcf4a0352fd49127d37b75327b34a17e82c31599155f8968ce4002",
+              "size": 308494
+            },
+            "audio_tokenizer/fp16/higgs_decoder.onnx.data": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__higgs_decoder.onnx.data",
+              "sha256": "5be7ff51d117dd1cd001b87ec6e6e93f61cbe923355c50841a15fcaf19f64a19",
+              "size": 43100160
+            },
+            "audio_tokenizer/fp16/model_config.json": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__model_config.json",
+              "sha256": "bc408dbf10aac3e56f22edec4447330ff3ee9cb91fc56c80f80e1b6a8c90d1aa",
+              "size": 348
+            },
+            "audio_tokenizer/fp16/quantizer_encoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__quantizer_encoder.onnx",
+              "sha256": "e4ba2c2079127be1df367e11b03d3a4c1d53f37ec926e12409a36acbc6c6c1d5",
+              "size": 6091791
+            },
+            "audio_tokenizer/fp16/semantic_encoder.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__semantic_encoder.onnx",
+              "sha256": "fdc768ef886e5ace2728a144cec9c144f9c18ff934a074904cc5b58535f5ac61",
+              "size": 334295
+            },
+            "audio_tokenizer/fp16/semantic_encoder.onnx.data": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/omnivoice-onnx-int4-v1/audio_tokenizer__fp16__semantic_encoder.onnx.data",
+              "sha256": "60c714753677a409e4226bc1e840f6e400bbbe0ab26f10618926a06cdf0e46ba",
+              "size": 218235904
+            }
+          }
+        }
+      ],
       "license": "Apache-2.0 (confirm component licenses)",
-      "source": "https://huggingface.co/onnx-community/OmniVoice-Onnx"
+      "source": "https://huggingface.co/onnx-community/OmniVoice-Onnx",
+      "playback_status": "experimental-not-yet-supported"
     }
   ]
 }
