@@ -5,8 +5,24 @@
       "id": "mms-khm",
       "name": "MMS Khmer",
       "family": "mms-vits",
-      "status": "upstream-only",
-      "releases": [],
+      "status": "available",
+      "releases": [
+        {
+          "version": "v1",
+          "files": {
+            "model.onnx": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/mms-khm-v1/model.onnx",
+              "sha256": "70acf4f024df6d6e742b6056d6e22e7632ebba8e11eab4e35a0d6f33bbf47189",
+              "size": 114044676
+            },
+            "tokens.txt": {
+              "url": "https://github.com/Sovai/-nocturne-note-models/releases/download/mms-khm-v1/tokens.txt",
+              "sha256": "b15954d9cc8eb2aad3eb564dce826c1361152ef4b83ac5e784f5ee86929ec317",
+              "size": 503
+            }
+          }
+        }
+      ],
       "license": "CC-BY-NC-4.0",
       "source": "https://huggingface.co/facebook/mms-tts-khm"
     },
