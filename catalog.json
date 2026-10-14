@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "models": [
+    {
+      "id": "mms-khm",
+      "name": "MMS Khmer",
+      "family": "mms-vits",
+      "status": "upstream-only",
+      "releases": [],
+      "license": "CC-BY-NC-4.0",
+      "source": "https://huggingface.co/facebook/mms-tts-khm"
+    },
+    {
+      "id": "omnivoice-onnx-int4",
+      "name": "OmniVoice ONNX INT4",
+      "family": "omnivoice",
+      "status": "experimental-unpublished",
+      "releases": [],
+      "license": "Apache-2.0 (confirm component licenses)",
+      "source": "https://huggingface.co/onnx-community/OmniVoice-Onnx"
+    }
+  ]
+}
