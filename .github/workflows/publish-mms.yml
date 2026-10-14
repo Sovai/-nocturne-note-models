@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Mirror upstream ONNX model and tokens
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ inputs.version || 'v1' }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
@@ -36,7 +36,7 @@ jobs:
             --title "MMS Khmer $VERSION" --notes "Mirrored from willwade/mms-tts-multilingual-models-onnx. Meta MMS weights retain CC BY-NC 4.0; see upstream model card. Checksums attached."
       - name: Publish verified manifest
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ inputs.version || 'v1' }}
         run: |
           set -euo pipefail
           python3 - <<'PY'
