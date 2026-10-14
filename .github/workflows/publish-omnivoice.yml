@@ -24,9 +24,15 @@ jobs:
       - name: Download exact mobile ONNX assets and compute integrity manifest
         run: |
           set -euo pipefail
-          hf download onnx-community/OmniVoice-Onnx \
-            --include 'int4/*' 'audio_tokenizer/fp16/*' \
-            --local-dir staging
+          python - <<'PY'
+          from huggingface_hub import snapshot_download
+          snapshot_download(
+            repo_id="onnx-community/OmniVoice-Onnx",
+            allow_patterns=["int4/*", "audio_tokenizer/fp16/*"],
+            local_dir="staging",
+            max_workers=4,
+          )
+          PY
           python - <<'PY'
           from pathlib import Path
           from hashlib import sha256
