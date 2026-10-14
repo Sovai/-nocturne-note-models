@@ -30,8 +30,7 @@ jobs:
           test "$(stat -c %s staging/tokens.txt)" -gt 50
           sha256sum staging/model.onnx staging/tokens.txt > staging/SHA256SUMS
           gh release create "$tag" staging/model.onnx staging/tokens.txt staging/SHA256SUMS \
-            --title "MMS Khmer $VERSION" --notes "Mirrored from willwade/mms-tts-multilingual-models-onnx. Meta MMS weights retain CC BY-NC 4.0; see upstream model card. Checksums attached." \
-            --verify-tag
+            --title "MMS Khmer $VERSION" --notes "Mirrored from willwade/mms-tts-multilingual-models-onnx. Meta MMS weights retain CC BY-NC 4.0; see upstream model card. Checksums attached."
       - name: Publish verified manifest
         env:
           VERSION: ${{ inputs.version }}
