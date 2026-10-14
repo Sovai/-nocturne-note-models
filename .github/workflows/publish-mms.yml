@@ -1,5 +1,8 @@
 name: Publish verified MMS Khmer model
 on:
+  push:
+    paths:
+      - .github/workflows/publish-mms.yml
   workflow_dispatch:
     inputs:
       version:
